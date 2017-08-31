@@ -1,0 +1,8 @@
+extends base.pug
+
+block scripts
+	script.
+		var APP_DATA = {
+			projects: !{JSON.stringify(projects)},
+		}
+	script(src='/assets/app.js')

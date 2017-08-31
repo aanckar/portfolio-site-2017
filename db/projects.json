@@ -1,0 +1,93 @@
+[
+	{
+		"id": "greenfinn",
+		"title": "GreenFinn",
+		"subtitle": "Website",
+		"year": "2017",
+		"url": "https://www.greenfinntools.com",
+		"description": "Product launch website. Product photography & product configurator app.",
+		"images": ["greenfinn1.png", "greenfinn2.png", "greenfinn3.png"],
+		"tags": ["Adobe Illustrator",	"WordPress", "Vue.js"]
+	}, {
+		"id": "smartbutlers",
+		"title": "Smartbutlers",
+		"subtitle": "Website",
+		"year": "2017",
+		"url": "https://www.smartbutlers.com",
+		"description": "Website and custom iconography.",
+		"images": ["smartbutlers1.png", "smartbutlers2.png", "smartbutlers3.png"],
+		"tags": ["Adobe Illustrator", "Inkscape", "WordPress"]
+	}, {
+		"id": "trapped",
+		"title": "Trapped",
+		"subtitle": "Website & brand",
+		"year": "2017",
+		"url": "https://www.trapped.fi",
+		"description": "Room escape website. Photography, logo, website and booking application.",
+		"images": ["trapped1.png", "trapped2.png", "trapped3.png"],
+		"tags": ["WordPress", "Inkscape"]
+	}, {
+		"id": "escapist",
+		"title": "Escapist",
+		"subtitle": "Room Escape control app",
+		"year": "2017",
+		"url": "",
+		"description": "Web application for running escape rooms: timer, surveillance, real-time messaging and statistics.",
+		"images": ["escapist1.png", "escapist2.png", "escapist3.png"],
+		"tags": ["Node.js",	"Vue.js",	"Socket.io"]
+	}, {
+		"id": "stiftelsen",
+		"title": "Åbo Akademi University Foundation",
+		"subtitle": "Website",
+		"year": "2017",
+		"url": "http://www.stiftelsenabo.fi",
+		"description": "Website and photography (hero image).",
+		"images": ["stiftelsen1.png", "stiftelsen2.png", "stiftelsen3.png"],
+		"tags": ["WordPress"]
+	}, {
+		"id": "fuelcast",
+		"title": "FuelCast",
+		"subtitle": "Website",
+		"year": "2017",
+		"url": "https://www.fuelcastonline.com",
+		"description": "Product website. Custom iconography.",
+		"images": ["fuelcast1.png", "fuelcast2.png", "fuelcast3.png"],
+		"tags": ["Adobe Illustrator",	"Inkscape",	"WordPress"]
+	}, {
+		"id": "jujo",
+		"title": "Jujo Thermal",
+		"subtitle": "Website",
+		"year": "2016",
+		"url": "https://www.jujothermal.com",
+		"description": "Specialty paper factory website. Product search app & product data sheet PDF design.",
+		"images": ["jujothermal1.png", "jujothermal2.png", "jujothermal3.png"],
+		"tags": ["Inkscape", "WordPress",	"jQuery"]
+	}, {
+		"id": "kankas",
+		"title": "Kankas Manor",
+		"subtitle": "Website",
+		"year": "2016",
+		"url": "https://www.kankas.fi",
+		"description": "Website for historical manor. Customized wedding & conference booking app.",
+		"images": ["kankas1.png", "kankas2.png", "kankas3.png"],
+		"tags": ["WordPress",	"jQuery",	"React"]
+	}, {
+		"id": "auriga",
+		"title": "Auriga Business Center",
+		"subtitle": "Website",
+		"year": "2015",
+		"url": "https://www.aurigacenter.fi",
+		"description": "Business center website.",
+		"images": ["auriga1.png", "auriga2.png", "auriga3.png"],
+		"tags": ["WordPress"]
+	}, {
+		"id": "questific",
+		"title": "Questific",
+		"subtitle": "Game webapp",
+		"year": "2016",
+		"url": "",
+		"description": "Web app for creating and playing interactive puzzle games.",
+		"images": ["questific1.png", "questific2.png", "questific3.png"],
+		"tags": ["WordPress",	"jQuery"]
+	}
+]
