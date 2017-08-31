@@ -5,7 +5,7 @@ const bodyParser = require('body-parser')
 
 const db = require('./lib/db')
 const app = express()
-const port = process.argv[2] || 3000
+const port = process.argv[2] || 3001
 const server = app.listen(port, '0.0.0.0')
 
 app.use(express.static(`${__dirname}/data`))
