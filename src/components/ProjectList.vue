@@ -337,8 +337,7 @@ $transition: all 0.35s ease-in-out;
 		bottom: 0;
 		left: 0;
 		z-index: 20;
-		//background-color: rgba(255,255,255,0.65);
-		background-color: rgba(0,0,0,0.85);
+		background-color: rgba(0,0,0,0.86);
 	}
 }
 

@@ -1,5 +1,7 @@
 const webpack = require('webpack')
 const path = require('path')
+const ManifestPlugin = require('webpack-manifest-plugin')
+const CleanObsoleteChunks = require('webpack-clean-obsolete-chunks')
 
 module.exports = {
 	context: path.resolve(__dirname, 'src'),
@@ -7,8 +9,8 @@ module.exports = {
 		'app': ['babel-polyfill', './app.js'],
 	},
 	output: {
-		path: path.resolve(__dirname, 'public'),
-		filename: '[name].js'
+		path: path.resolve(__dirname, 'public/assets'),
+		filename: '[name].[chunkhash].js'
 	},
 	module: {
 		rules: [
@@ -47,6 +49,10 @@ module.exports = {
       }
 		]
 	},
+	plugins: [
+		new ManifestPlugin(),
+		new CleanObsoleteChunks()
+	],
 	resolve: {
 		alias: {
 			'vue$': 'vue/dist/vue.common.js',
