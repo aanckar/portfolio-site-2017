@@ -66,7 +66,6 @@ export default {
 	},
 	methods: {
 		openProject(project) {
-			console.log(getViewportDimensions())
 			if ( this.active === project.id ) { return }
 			const self = this
 			this.$store.commit('projects/open', project)
@@ -116,7 +115,7 @@ export default {
 		}
 	},
 	mounted() {
-		const numItems = 2
+		const numItems = 6
 		this.$store.commit('loader/setItemsToLoad', numItems*3)
 		this.projects.slice(0, numItems).forEach(project => {
 			const imgs = [

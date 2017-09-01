@@ -23398,7 +23398,6 @@ exports.default = {
 	})),
 	methods: {
 		openProject: function openProject(project) {
-			console.log((0, _utils.getViewportDimensions)());
 			if (this.active === project.id) {
 				return;
 			}
@@ -23442,7 +23441,7 @@ exports.default = {
 	mounted: function mounted() {
 		var _this = this;
 
-		var numItems = 2;
+		var numItems = 6;
 		this.$store.commit('loader/setItemsToLoad', numItems * 3);
 		this.projects.slice(0, numItems).forEach(function (project) {
 			var imgs = [project.id + '-img-1', project.id + '-img-2', project.id + '-img-3'];
