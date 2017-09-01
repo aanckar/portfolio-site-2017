@@ -245,7 +245,6 @@ $transition: all 0.35s ease-in-out;
 .card-content {
 	padding: 1rem;
 	transition: $transition;
-	//height: 140px;
 	font-size: 1.25rem;
 	background-color: $grey-dark;
 
@@ -285,22 +284,12 @@ $transition: all 0.35s ease-in-out;
 		z-index: 21;
 		margin-top: 1rem;
 		background-color: #fff;
-		//background-color: $secondary;
-		//color: $white;
-		a {
-			//color: $teal-light;
-		}
 		.title {
 			font-size: 2.25rem;
 			color: $grey-darker;
-			//color: $white;
 		}
-		//opacity: 0;
 		.content {
 			display: block;
-		}
-		&.is-active {
-			//opacity: 1;
 		}
 		@media screen and (min-width: $fullhd) {
 			margin-top: 0;
@@ -337,7 +326,7 @@ $transition: all 0.35s ease-in-out;
 		bottom: 0;
 		left: 0;
 		z-index: 20;
-		background-color: rgba(0,0,0,0.86);
+		background-color: rgba(0,0,0,0.85);
 	}
 }
 
