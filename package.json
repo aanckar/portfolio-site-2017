@@ -21,6 +21,7 @@
     "css-loader": "^0.28.7",
     "image-promise": "^5.0.1",
     "node-sass": "^4.5.3",
+    "nodelist-foreach-polyfill": "^1.2.0",
     "sass-loader": "^6.0.6",
     "smoothscroll-polyfill": "^0.3.6",
     "spinkit": "^1.2.5",
