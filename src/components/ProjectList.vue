@@ -48,6 +48,7 @@
 </template>
 
 <script>
+import loadImage from 'image-promise'
 import { mapGetters } from 'vuex'
 import { getViewportDimensions, scrollTo } from '../utils'
 
@@ -113,6 +114,27 @@ export default {
 			this.$store.commit('projects/close')
 			this.blockStyles = []
 		}
+	},
+	mounted() {
+		const numItems = 2
+		this.$store.commit('loader/setItemsToLoad', numItems*3)
+		this.projects.slice(0, numItems).forEach(project => {
+			const imgs = [
+				`${project.id}-img-1`,
+				`${project.id}-img-2`,
+				`${project.id}-img-3`,
+			]
+			imgs.forEach(img => {
+				const imgEl = document.getElementById(img).childNodes[0]
+				loadImage(imgEl)
+				.then(img => {
+					this.$store.dispatch('loader/itemLoaded')
+				})
+				.catch(() => {
+					this.$store.dispatch('loader/itemLoaded')
+				})
+			})
+		})
 	}
 }
 </script>

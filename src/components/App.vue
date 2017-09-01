@@ -1,5 +1,7 @@
 <template>
-	<div class="site-container" :class="{'has-open-modal': activeProject}">
+	<div class="site-container" :class="{'has-open-modal': activeProject, 'is-loading': isLoading}">
+		<loader></loader>
+		
 		<side-bar></side-bar>
 		<main class="main section">
 			<router-view name="main"></router-view>
@@ -12,14 +14,16 @@
 
 <script>
 import { mapGetters } from 'vuex'
+import Loader from './Loader.vue'
 import SideBar from '../layouts/SideBar.vue'
 
 export default {
 	components: {
-		SideBar
+		Loader, SideBar
 	},
 	computed: {
 		...mapGetters({
+			isLoading: 'loader/isLoading',
 			activeProject: 'projects/active'
 		})
 	}

@@ -7,7 +7,7 @@
 			<figure class="image is-128x128">
 				<img src="assets/images/andreas-anckar.jpg">
 			</figure>
-			<p>Currently based in Mariehamn, Åland. Contact me at</p>
+			<p>Currently based in Mariehamn, Åland Islands. Contact me at</p>
 			<p class="is-size-4">andreas@anckar.fi</p>
 		</div>
 	</aside>
