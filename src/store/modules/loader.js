@@ -1,3 +1,5 @@
+import { animate } from '../../utils'
+
 const state = {
 	itemsToLoad: 1,
 	itemsLoaded: 0,
@@ -36,7 +38,8 @@ const actions = {
 		if ( state.itemsLoaded === state.itemsToLoad ) {
 			setTimeout(() => {
 				commit('stop')
-			}, 750)
+				animate()
+			}, 500)
 		}
 	}
 }

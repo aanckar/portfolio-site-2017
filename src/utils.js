@@ -30,3 +30,21 @@ export const scrollTo = (target, offset = 0) => {
 		})
 	}
 }
+
+export const animate = () => {
+	const anims = document.querySelectorAll('.has-animation')
+	anims.forEach((el, index) => {
+		el.style.transform = 'none'
+		el.style.opacity = 1
+	})
+	const animSeqs = document.querySelectorAll('.has-animation-sequence')
+	animSeqs.forEach(seq => {
+		const els = seq.querySelectorAll('.animate')
+		els.forEach((el, index) => {
+			setTimeout(() => {
+				el.style.transform = 'none'
+				el.style.opacity = 1
+			}, 250*index)
+		})
+	})
+}

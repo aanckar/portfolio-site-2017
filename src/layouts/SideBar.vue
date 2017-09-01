@@ -1,13 +1,15 @@
 <template>
-	<aside class="sidebar section">
-		<h1 class="title is-1">Andreas Anckar</h1>
-		<hr>
-		<h2 class="subtitle is-3">Web developer & designer</h2>
-		<div class="info">
+	<aside class="sidebar section has-animation-sequence">
+		<div class="animate animate-fade animate-in-from-left">
+			<h1 class="title is-1">Andreas Anckar</h1>
+			<hr>
+		</div>
+		<h2 class="subtitle is-3 animate animate-fade animate-in-from-left">Web developer & designer</h2>
+		<div class="info animate animate-fade animate-in-from-left">
 			<figure class="image is-128x128">
 				<img src="assets/images/andreas-anckar.jpg">
 			</figure>
-			<p>Currently based in Mariehamn, Åland Islands. Contact me at</p>
+			<p>Currently based in Mariehamn, Åland Islands. Contact me at:</p>
 			<p class="is-size-4">andreas@anckar.fi</p>
 		</div>
 	</aside>
@@ -21,6 +23,7 @@
 	color: $white;
 	background-color: $secondary;
 	background: none;
+
 	.title, .subtitle {
 		font-family: $family-secondary;
 		text-transform: uppercase;
@@ -68,6 +71,7 @@
 		left: 0;
 		width: $sidebar-width;
 		height: 100vh;
+		
 		.title, .subtitle {
 			text-align: left;
 		}
@@ -82,9 +86,6 @@
 			bottom: 3rem;
 		}
 	}
-}
-
-.contact {
-
+	
 }
 </style>

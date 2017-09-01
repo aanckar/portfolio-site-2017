@@ -1,8 +1,13 @@
 <template>
 	<div>
-		<div class="cards columns is-desktop is-multiline" :class="{'is-active': active}">
-			<div class="column is-half-desktop" v-for="(project, index) in projects" :key="project.name">
-				<div class="card" :class="{'is-active': active === project.id}" @click="openProject(project)">
+		<div 
+			class="cards columns is-desktop is-multiline has-animation-sequence" 
+			:class="{'is-active': active}">
+			<div class="column is-half-desktop animate animate-fade animate-in-from-bottom" v-for="(project, index) in projects" :key="project.name">
+				<div 
+					class="card" 
+					:class="{'is-active': active === project.id}" 
+					@click="openProject(project)">
 
 					<div class="card-image">
 						<figure 
@@ -11,8 +16,6 @@
 							:id="`${project.id}-img-${index+1}`"
 							:style="active === project.id ? blockStyles[index] : {}">
 							<img :src="`assets/images/${image}`">
-							<!-- <div class="has-bg-img" :style="{ backgroundImage: `url(assets/images/${image})` }"></div> -->
-							<p class="title is-1" v-if="blockStyles[project.id]">LAWL</p>
 						</figure>
 					</div>
 
@@ -40,9 +43,7 @@
 			</div>
 		</div>
 
-		<div class="overlay" :class="{'is-active': active}">
-			<!-- <button class="modal-close is-large" aria-label="close" @click="closeProject()"></button> -->
-		</div>
+		<div class="overlay" :class="{'is-active': active}"></div>
 		<button class="close-overlay delete is-large" :class="{'is-visible': active}" @click="closeProject()"></button>
 	</div>
 </template>
@@ -143,6 +144,9 @@ export default {
 $transition: all 0.35s ease-in-out;
 
 .cards {
+	transform: none;
+	opacity: 1;
+	transition: $transition;
 	@media screen and (max-width: $fullhd - 1px) {
 		//margin: 0 2.5rem;
 		&.is-active {
@@ -150,6 +154,10 @@ $transition: all 0.35s ease-in-out;
 				display: none;
 			}
 		}
+	}
+	.site-container.is-loading & {
+		opacity: 0;
+		transform: translateY(2rem);
 	}
 }
 

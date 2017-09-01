@@ -22,3 +22,19 @@
 	// Set appropriate image ratio
 	padding-top: 60%;
 }
+
+.animate {
+	transition: all 0.5s ease;
+
+	&-fade {
+		opacity: 0;
+	}
+
+	&-in-from-bottom {
+		transform: translateY(1rem);
+	}
+
+	&-in-from-left {
+		transform: translateX(-1rem);
+	}
+}
