@@ -24,7 +24,7 @@
 						:id="`${project.id}-desc`" 
 						:style="active === project.id ? blockStyles[3] : {}">
 
-						<p class="subtitle is-4">{{ project.subtitle }}</p>
+						<p class="subtitle is-5">{{ project.subtitle }}</p>
 						<h2 class="title is-3">{{ project.title }}</h2>
 
 						<div class="content">
@@ -249,7 +249,7 @@ $transition: all 0.35s ease-in-out;
 	background-color: $grey-dark;
 
 	.title {
-		margin-bottom: 0.5rem;
+		margin-bottom: 0.75rem;
 		text-transform: uppercase;
 		line-height: 1;
 		font-family: $family-secondary;
@@ -257,6 +257,7 @@ $transition: all 0.35s ease-in-out;
 		color: $white;
 	}
 	.subtitle {
+		padding-bottom: 0.25rem;
 		color: $grey-light;
 	}
 	.content {
@@ -268,7 +269,7 @@ $transition: all 0.35s ease-in-out;
 	hr {
 		width: 10rem;
 		margin: 0 auto 1rem;
-		background-color: $red;
+		background-color: $grey-lighter; //$red;
 	}
 	.tags {
 		width: 100%;
@@ -286,7 +287,7 @@ $transition: all 0.35s ease-in-out;
 		background-color: #fff;
 		.title {
 			font-size: 2.25rem;
-			color: $grey-darker;
+			color: $primary; //$grey-darker;
 		}
 		.content {
 			display: block;
@@ -300,19 +301,17 @@ $transition: all 0.35s ease-in-out;
 		@media screen and (min-width: $xlarge) {
 			padding: 2rem;
 			.title {
+				margin-bottom: 1.25rem;
 				font-size: 2.75rem;
+			}
+			.card-desc {
+				margin: 2.125rem 0;
+				font-size: 1.5rem; 
 			}
 			.tags {
 				margin: 1.25rem auto;
 			}
 		}
-	}
-}
-
-.card-desc {
-	@media screen and (min-width: $xlarge) {
-		margin-top: 2.25rem;
-		font-size: 1.5rem; 
 	}
 }
 

@@ -16,10 +16,9 @@ app.use(bodyParser.urlencoded({
 }))
 app.set('views', `${__dirname}/views`)
 app.set('view engine', 'pug')
+global.appRoot = path.resolve(__dirname);
 
-/**
- * DB
- */
+// DB
 db.manifest = db.readJson('public/assets/manifest.json')
 
 const dataFiles = [
@@ -31,4 +30,5 @@ dataFiles.forEach(file => {
 	}
 })
 
+// ROUTES
 require('./lib/routes')(app, db)

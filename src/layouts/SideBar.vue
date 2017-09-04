@@ -76,7 +76,7 @@
 			text-align: left;
 		}
 		.title {
-			margin: 3rem 0 2rem;
+			margin: 3rem 0 1rem;
 		}
 		.subtitle {
 			margin-bottom: 4rem;
